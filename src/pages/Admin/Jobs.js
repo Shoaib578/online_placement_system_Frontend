@@ -12,6 +12,7 @@ import { PencilSquareIcon } from '@heroicons/react/24/solid'
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import AddStudentModel from './AddUserModel';
+import { EnvelopeOpenIcon } from '@heroicons/react/24/solid'
 
 
 import {
@@ -98,7 +99,7 @@ const Jobs = () => {
 
         <li>
           <a href="/admin/applications">
-          <BriefcaseIcon style={{width:22, height:22, color:"white"}}/>
+          <EnvelopeOpenIcon style={{width:22, height:22, color:"white"}}/>
           {sidebaropen == false ? 
             <span className="links_name">Applications</span>:null}
           </a>

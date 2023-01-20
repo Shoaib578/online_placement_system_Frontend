@@ -12,6 +12,7 @@ import { PencilSquareIcon } from '@heroicons/react/24/solid'
 import AddStudentModel from './AddUserModel';
 import Axios from 'axios'
 import validator from 'validator';
+import { EnvelopeOpenIcon } from '@heroicons/react/24/solid'
 
 import {
     BrowserRouter as Router,
@@ -160,9 +161,7 @@ import {
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title" id="exampleModalLongTitle">Update student</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
+       
       </div>
       <div class="modal-body">
 
@@ -263,7 +262,7 @@ import {
 
         <li>
           <a href="/admin/applications">
-          <BriefcaseIcon style={{width:22, height:22, color:"white"}}/>
+          <EnvelopeOpenIcon style={{width:22, height:22, color:"white"}}/>
           {this.state.sidebaropen == false ? 
             <span className="links_name">Applications</span>:null}
           </a>

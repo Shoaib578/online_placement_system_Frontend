@@ -9,6 +9,7 @@ import { UserCircleIcon } from '@heroicons/react/24/solid'
 import { ArrowLeftOnRectangleIcon } from '@heroicons/react/24/solid'
 import { TrashIcon } from '@heroicons/react/24/solid'
 import { PencilSquareIcon } from '@heroicons/react/24/solid'
+import { EnvelopeOpenIcon } from '@heroicons/react/24/solid'
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import AddStudentModel from './AddUserModel';
@@ -22,7 +23,7 @@ import {
 } from 'react-router-dom';
 import  Axios  from 'axios';
 
-  class Students extends React.Component {
+class Students extends React.Component {
      state = {
       sidebaropen:true,
       students:[],
@@ -179,9 +180,7 @@ import  Axios  from 'axios';
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title" id="exampleModalLongTitle">Update student</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
+            
           </div>
           <div class="modal-body">
 
@@ -295,7 +294,7 @@ import  Axios  from 'axios';
 
         <li>
           <a href="/admin/applications">
-          <BriefcaseIcon style={{width:22, height:22, color:"white"}}/>
+          <EnvelopeOpenIcon style={{width:22, height:22, color:"white"}}/>
           {this.state.sidebaropen === false ? 
             <span className="links_name">Applications</span>:null}
           </a>
