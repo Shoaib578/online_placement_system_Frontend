@@ -77,7 +77,7 @@ class App extends React.Component {
   check_is_admin = ()=>{
     if(window.location.pathname.includes('admin')){
       if(parse == null){
-        return window.location = "/"
+        return window.location = "/login"
       }else{
         if(parse.is_admin == 0){
         return window.location = "/"
